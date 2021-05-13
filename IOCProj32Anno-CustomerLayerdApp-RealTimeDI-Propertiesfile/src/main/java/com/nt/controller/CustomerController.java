@@ -16,11 +16,11 @@ public class CustomerController {
 	public String processCustomer(CustomerVO vo) throws Exception
 	{
 		CustomerDTO dto=new CustomerDTO();
-		dto.setCAddr(vo.getCAdd());
-		dto.setCName(vo.getCName());
-		dto.setPAmt(Float.parseFloat(vo.getPAmt()));
-		dto.setRate(Float.parseFloat(vo.getRate()));
-		dto.setTime(Float.parseFloat(vo.getTime()));
+		dto.setCAddr(vo.getcAdd());
+		dto.setCName(vo.getcName());
+		dto.setPAmt(Float.parseFloat(vo.getpAmt()));
+		dto.setRate(Float.parseFloat(vo.getrate()));
+		dto.setTime(Float.parseFloat(vo.gettime()));
 		String result=service.calculateInterestAmt(dto);
 		return result;
 		
